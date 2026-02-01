@@ -1,0 +1,44 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 15px;
+
+  @include mobile {
+    width: 150px;
+  }
+
+  img {
+    @include mobile {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.title {
+  height: 40px;
+  font-style: italic;
+}
+
+.category {
+  color: $gray-color;
+}
+
+.button {
+  background-color: green;
+  padding: 10px;
+  color: $white-color;
+  border-radius: 10px;
+  font-size: 15px;
+}

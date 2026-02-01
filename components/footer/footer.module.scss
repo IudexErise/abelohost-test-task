@@ -1,0 +1,31 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.footer {
+  background: $blue-color;
+  width: 100vw;
+}
+
+.container {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.date {
+  color: $white-color;
+  text-decoration: underline;
+}
+
+.email {
+  color: $white-color;
+  text-align: center;
+
+  span {
+    border-bottom: 1px solid $white-color;
+  }
+}

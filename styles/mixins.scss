@@ -1,0 +1,18 @@
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@mixin page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,52 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.page {
+  @include page;
+}
+
+.container {
+  @include container;
+  margin: 25px 0;
+}
+
+.form {
+  height: 250px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  @include mobile {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+.input {
+  border: 1px solid $gray-color;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.button {
+  border: 1px solid $gray-color;
+  border-radius: 10px;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: $blue-color;
+    color: white;
+    border: 1px solid transparent;
+  }
+}
+
+.error {
+  margin-top: -10px;
+  color: $error-color;
+}
